@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 import { ArrowRight, Download } from "lucide-react";
 import { MStripe } from "../MStripe";
 
-const roles = ["Backend Engineer.", "Product Builder.", "AI Automation Developer.", "AI-Native Full-Stack Dev."];
+const roles = ["Backend Engineer", "Product Builder", "AI Automation Developer", "AI-Native Full-Stack Dev"];
 
 function Typewriter() {
   const [i, setI] = useState(0);
@@ -12,7 +12,9 @@ function Typewriter() {
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const word = roles[i];
+    const role = roles[i];
+    const article = /^[aeiou]/i.test(role) ? "an" : "a";
+    const word = `${article} ${role}`;
     const speed = deleting ? 35 : 70;
     const t = setTimeout(() => {
       if (!deleting) {
@@ -81,7 +83,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.45 }}
           className="mt-8 flex items-baseline gap-3 text-xl md:text-2xl font-light"
         >
-          <span className="text-body">I ship</span>
+          <span className="text-body">I'm</span>
           <Typewriter />
         </motion.div>
 

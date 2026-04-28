@@ -70,7 +70,7 @@ export function Footer() {
 
         <div className="hairline-t pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="label-uppercase text-body text-[10px]">
-            © {new Date().getFullYear()} Abhinay Yendoti — All systems engineered with intent.
+            © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Abhinay Yendoti — All systems engineered with intent.
           </div>
           <div className="label-uppercase text-body text-[10px]">
             Designed in tribute to BMW M // Built with React + TanStack
