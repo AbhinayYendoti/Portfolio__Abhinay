@@ -1,4 +1,4 @@
-import React from "react";
+import type { ReactNode } from "react";
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
@@ -33,9 +33,9 @@ export const Route = createRootRoute({
       { title: "Abhinay Portfolio" },
       { name: "description", content: "AI-Native Full-Stack Developer building intelligent scalable systems. 4 live products shipped." },
       { name: "author", content: "Abhinay Yendoti" },
-      { property: "og:title", content: "Abhinay Yendoti — AI-Native Full-Stack Engineer" },
-      { property: "og:description", content: "Backend Engineer · Product Builder · AI Automation Developer." },
-      { property: "og:type", content: "website" },
+      { property: "og:title", content: "Abhinay Yendoti — AI-Native Full-Stack Engineer" } as Record<string, string>,
+      { property: "og:description", content: "Backend Engineer · Product Builder · AI Automation Developer." } as Record<string, string>,
+      { property: "og:type", content: "website" } as Record<string, string>,
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
     ],
@@ -44,7 +44,7 @@ export const Route = createRootRoute({
       { rel: "shortcut icon", href: "/favicon.png" },
       { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap",
@@ -60,7 +60,7 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
+function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>

@@ -20,13 +20,13 @@ export const Route = createFileRoute("/")({
         content:
           "Abhinay Yendoti — AI-Native Full-Stack Developer. Building intelligent, scalable systems with FastAPI, React, and agent-driven workflows. 4 live products shipped.",
       },
-      { property: "og:title", content: "Abhinay Yendoti — AI-Native Full-Stack Engineer" },
+      { property: "og:title", content: "Abhinay Yendoti — AI-Native Full-Stack Engineer" } as Record<string, string>,
       {
         property: "og:description",
         content:
           "Backend Engineer · Product Builder · AI Automation Developer. 4 live products shipped solo.",
-      },
-      { property: "og:type", content: "website" },
+      } as Record<string, string>,
+      { property: "og:type", content: "website" } as Record<string, string>,
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
