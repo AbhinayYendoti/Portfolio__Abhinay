@@ -111,7 +111,7 @@ export function Hero() {
             View Projects <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="https://github.com/AbhinayYendoti"
+            href="/Abhinay_Yendoti_AI_FullStack_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-3 border border-on-dark text-on-dark px-7 h-12 label-uppercase-lg hover:bg-on-dark hover:text-canvas transition-colors"

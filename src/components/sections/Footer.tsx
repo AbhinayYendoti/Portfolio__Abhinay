@@ -28,7 +28,7 @@ const cols = [
   {
     title: "Resources",
     items: [
-      { l: "Resume", h: "https://github.com/AbhinayYendoti" },
+      { l: "Resume", h: "/Abhinay_Yendoti_AI_FullStack_Resume.pdf" },
       { l: "Certifications", h: "#about" },
       { l: "Contact", h: "#contact" },
     ],
